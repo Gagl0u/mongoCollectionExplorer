@@ -5,6 +5,7 @@
 Open a new shell in your mongo and copy paste code below.
 
 ------------ BEGINNING
+```
 
 db.system.js.save({"_id": "exploreJson",
 value: function (collectionName, maxLimit) {
@@ -80,7 +81,7 @@ value: function (collectionName, maxLimit) {
     printjson(finalObject);
 }
 });
-
+```
 ------------ END
 
 You should now find a new entry in your database. To look for it open `System` folder and view `system.js` collection.
@@ -92,10 +93,10 @@ You should now find a new entry in your database. To look for it open `System` f
 Open a new shell (or you can use an existing one) and copy paste the code below
 
 ------------ BEGINNING
-
+```
 db.loadServerScripts()
 exploreJson("COLLECTION_NAME", "MAX_NUMBER_OF_OBJECTS_TO_RETRIEVE")
-
+```
 ------------ END
 
 3. Update the values used in the script
